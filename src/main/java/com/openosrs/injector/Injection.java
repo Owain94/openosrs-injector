@@ -18,6 +18,7 @@ import com.openosrs.injector.injectors.raw.ClearColorBuffer;
 import com.openosrs.injector.injectors.raw.DrawAfterWidgets;
 import com.openosrs.injector.injectors.raw.DrawMenu;
 import com.openosrs.injector.injectors.raw.AddPlayerToMenu;
+import com.openosrs.injector.injectors.raw.FxApplet;
 import com.openosrs.injector.injectors.raw.Occluder;
 import com.openosrs.injector.injectors.raw.RasterizerAlpha;
 import com.openosrs.injector.injectors.raw.RenderDraw;
@@ -78,6 +79,8 @@ public class Injection extends InjectData implements InjectTaskHandler
 		inject(new DrawMenu(this));
 
 		inject(new AddPlayerToMenu(this));
+
+		inject(new FxApplet(this));
 
 		validate(new InjectorValidator(this));
 
